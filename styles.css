@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'assassin';
+	src: url('Assassin$.ttf');
+}
+
 
 body {
 	background-color: black;
@@ -15,12 +20,16 @@ margin-left: 40%;
 	height: 100%;
 }
 
+a {
+	color: black;
+}
 
 .filmpage {
 
 margin-left: 12%;
 margin-right: 15%;
-margin-top: 2rem;
+margin-top: 1%;
+height: 80%;
 }
 
 #section1 {
@@ -51,10 +60,21 @@ iframe {
 }
 
 button {
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: black;
 	border: none;
 	font-size: 2rem;
-	margin-top: 1rem;
+	/*margin-top: 2%;*/
+	/*margin-left: 47%;*/
+	font-family: 'assassin';
+}
+
+.button {
 	margin-left: 45%;
+	cursor: progress;
+}
+
+
+a .button {
+	cursor: default;
 }
