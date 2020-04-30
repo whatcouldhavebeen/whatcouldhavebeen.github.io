@@ -5,6 +5,8 @@
 <head>
 
 <link rel="stylesheet" href="styles.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <!-- <script src="script.js"></script> -->
 
 <!-- <h1> Hunter's Interactive Film </h1> -->
@@ -16,19 +18,107 @@
 <div id='section2' class='filmpage'>
 
 <a href="film5.html">
-<img src="img/film5.jpg" class="thumbnail">
+<img src="img/death.jpg" id="film5" class="thumbnail">
 </a>
 <a href="film6.html">
-<img src="img/film6.jpg" class="thumbnail">
+<img src="img/love.jpg" id="film6"class="thumbnail">
 </a>
 <a href="film7.html">
-<img src="img/film7.jpg" class="thumbnail">
+<img src="img/religion.jpg" id="film7" class="thumbnail">
 </a>
 <a href="film8.html">
-<img src="img/film8.jpg" class="thumbnail">
+<img src="img/family.jpg" id="film8" class="thumbnail">
 </a>
 
 </div>
+
+
+<audio id="audio5">
+<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
+	
+<source src="sounds/death2.m4a" type="audio/mp4"></source>
+
+</audio>
+
+<audio id="audio6">
+<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
+	
+<source src="sounds/love2.mp3" type="audio/mp3"></source>
+
+</audio>
+
+<audio id="audio7">
+<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
+	
+<source src="sounds/religion2.m4a" type="audio/mp4"></source>
+
+</audio>
+
+
+<audio id="audio8">
+<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
+	
+<source src="sounds/christmas2.m4a" type="audio/mp4"></source>
+
+</audio>
+
+<script>
+
+// var audio = document.getElementById("audio_death");
+// audio.play();
+
+var audio5 = $("#audio5")[0];
+var audio6 = $("#audio6")[0];
+var audio7 = $("#audio7")[0];
+var audio8 = $("#audio8")[0];
+
+$("#film5").mouseenter(function() {
+	audio5.currentTime = 0;	
+  audio5.play();
+});
+
+$("#film5").mouseleave(function() {
+	if(!audio5.paused) {
+  audio5.pause();
+}
+});
+
+$("#film6").mouseenter(function() {
+	audio6.currentTime = 0;	
+  audio6.play();
+});
+
+$("#film6").mouseleave(function() {
+	if(!audio6.paused) {
+  audio6.pause();
+}
+});
+
+$("#film7").mouseenter(function() {
+	audio7.currentTime = 0;	
+  audio7.play();
+});
+
+$("#film7").mouseleave(function() {
+ if(!audio7.paused) {
+  audio7.pause();
+}
+});
+
+$("#film8").mouseenter(function() {
+	audio8.currentTime = 0;	
+  audio8.play();
+});
+
+$("#film8").mouseleave(function() {
+ if(!audio8.paused) {
+  audio8.pause();
+}
+});
+
+// console.log("played");
+
+</script>
 
 <a class="button" style='margin-left: 46.5%;' href="end.html">
 <button> END </button>
