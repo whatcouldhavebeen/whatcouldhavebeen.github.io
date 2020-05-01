@@ -13,113 +13,20 @@
 
 <body>
 
-<div id='section1' class='filmpage'>
+<h1> WELCOME TO <b>\</b> </h1>
 
-<a href="film1.html">
-<img src="img/death.jpg" id="film1" class="thumbnail">
-</a>
-<a href="film2.html">
-<img src="img/love.jpg" id="film2" class="thumbnail">
-</a>
-<a href="film3.html">
-<img src="img/religion.jpg" id="film3" class="thumbnail">
-</a>
-<a href="film4.html">
-<img src="img/family.jpg" id="film4" class="thumbnail">
-</a>
+<h2 style="margin-left:43%;"> an online experience </h2>
 
+<div id="instructions">
+<p> instructions instructions instructions instructions</p>
+<p> instructions instructions instructions instructions</p>
+<p> instructions instructions instructions instructions</p>
+<p> instructions instructions instructions instructions</p>
 </div>
 
-<audio id="audio1">
-<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
-	
-<source src="sounds/death1.m4a" type="audio/mp4"></source>
 
-</audio>
-
-<audio id="audio2">
-<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
-	
-<source src="sounds/love1.mp3" type="audio/mp3"></source>
-
-</audio>
-
-<audio id="audio3">
-<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
-	
-<source src="sounds/religion1.m4a" type="audio/mp4"></source>
-
-</audio>
-
-
-<audio id="audio4">
-<!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
-	
-<source src="sounds/christmas1.m4a" type="audio/mp4"></source>
-
-</audio>
-
-<script>
-
-// var audio = document.getElementById("audio_death");
-// audio.play();
-
-var audio1 = $("#audio1")[0];
-var audio2 = $("#audio2")[0];
-var audio3 = $("#audio3")[0];
-var audio4 = $("#audio4")[0];
-
-$("#film1").mouseenter(function() {
-	audio1.currentTime = 0;	
-  audio1.play();
-});
-
-$("#film1").mouseleave(function() {
-	if(!audio1.paused) {
-  audio1.pause();
-}
-});
-
-$("#film2").mouseenter(function() {
-	audio2.currentTime = 0;	
-  audio2.play();
-});
-
-$("#film2").mouseleave(function() {
-	if(!audio2.paused) {
-  audio2.pause();
-}
-});
-
-$("#film3").mouseenter(function() {
-	audio3.currentTime = 0;	
-  audio3.play();
-});
-
-$("#film3").mouseleave(function() {
- if(!audio3.paused) {
-  audio3.pause();
-}
-});
-
-$("#film4").mouseenter(function() {
-	audio3.currentTime = 0;	
-  audio4.play();
-});
-
-$("#film4").mouseleave(function() {
- if(!audio4.paused) {
-  audio4.pause();
-}
-});
-
-// console.log("played");
-
-</script>
-
-
-<a class="button" style='margin-left: 46.5%;' href="end.html">
-<button> END </button>
+<a class="button" style='margin-left: 45%;' href="page1.html">
+<button> START </button>
 </a>
 
 </body>

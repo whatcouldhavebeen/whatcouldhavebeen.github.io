@@ -8,15 +8,27 @@ body {
 	background-color: black;
 }
 h1 {
-
-margin-left: 40%;
-
+	font-size: 3rem;
+margin-left: 35%;
+margin-top: 6%;
 }
 
+#instructions {
+	font-family: 'assassin';
+color: white;
+font-size: 1.7rem;
+margin-left: 30%;
+margin-bottom: 5%;
+}
+
+* {
+	color: white;
+	font-family: 'assassin';
+}
 .thumbnail {
 	width: 40%;
 	margin-left:1rem;
-	margin-bottom: 1rem;
+	/*margin-bottom: 1rem;*/
 	height: 100%;
 }
 
