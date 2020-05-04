@@ -15,20 +15,31 @@
 
 <div id='section1' class='filmpage'>
 
-<a href="film1.html">
+<a class="film_thumbnail" href="film1.html">
 <img src="img/death.jpg" id="film1" class="thumbnail">
 </a>
-<a href="film2.html">
+<a class="film_thumbnail" href="film2.html">
 <img src="img/love.jpg" id="film2" class="thumbnail">
 </a>
-<a href="film3.html">
+<a class="film_thumbnail" href="film3.html">
 <img src="img/religion.jpg" id="film3" class="thumbnail">
 </a>
-<a href="film4.html">
+<a class="film_thumbnail" href="film4.html">
 <img src="img/family.jpg" id="film4" class="thumbnail">
 </a>
 
 </div>
+
+<script>
+
+var cards = $(".film_thumbnail");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+
+	</script>
 
 <audio id="audio1">
 <!-- <source src="sounds/death.aif" type="audio/aif"></source>-->
